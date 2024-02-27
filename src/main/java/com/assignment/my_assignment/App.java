@@ -16,6 +16,9 @@ public class App
     {
     	// Set the path to chromedriver.exe
        // System.setProperty("webdriver.chrome.driver", "C:/Users/rama4/Downloads/chromedriver-win64/chromedriver-win64/chromedriver.exe");
+
+        ChromeOptions options = new ChromeOptions();
+options.addArguments("--headless");
         
         // Initialize WebDriver
     	WebDriverManager.chromedriver().setup();
